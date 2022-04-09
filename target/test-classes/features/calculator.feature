@@ -30,38 +30,38 @@ Feature: To create a calculator with add and subtract
       |    4 |    2 |   2 |
       |    6 |    5 |   1 |
 
-   Scenario: Add multiple numbers using a cucumber data table
-   Given I have a calculator
-   When I add below numbers
-   |1|
-   |2|
-   |4|
-   |6|
-   |7|
-   Then The result should be 20
-   
-   Scenario: Add multiple numbers using a list
-   Given I have a calculator
-   When I add below numbers using a list
-   |1|
-   |2|
-   |4|
-   |6|
-   |7|
-   Then The result should be 20
-   
-   Scenario: To calculate the total bill of the order
-   Given I have a calculator
-   When order below orders
-   |Coffee| 20|
-   |Tea   | 30|
-   |burger| 60|
-   Then The result should be 110
-   
-   Scenario: To calculate the total bill of the order
-   Given I have a calculator
-   When order below orders with multiple qty
-   |Coffee| 1|20|
-   |Tea   | 2|30|
-   |burger| 1|60|
-   Then The result should be 140
+  Scenario: Add multiple numbers using a cucumber data table
+    Given I have a calculator
+    When I add below numbers
+      | 1 |
+      | 2 |
+      | 4 |
+      | 6 |
+      | 7 |
+    Then The result should be 20
+
+  Scenario: Add multiple numbers using a list
+    Given I have a calculator
+    When I add below numbers using a list
+      | 1 |
+      | 2 |
+      | 4 |
+      | 6 |
+      | 7 |
+    Then The result should be 20
+
+  Scenario: To calculate the total bill of the order
+    Given I have a calculator
+    When order below orders
+      | Coffee | 20 |
+      | Tea    | 30 |
+      | burger | 60 |
+    Then The result should be 110
+
+  Scenario: To calculate the total bill of the order
+    Given I have a calculator
+    When order below orders with multiple qty
+      | Coffee | 1 | 20 |
+      | Tea    | 2 | 30 |
+      | burger | 1 | 60 |
+    Then The result should be 140

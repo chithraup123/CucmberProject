@@ -66,7 +66,6 @@ public class CalculatorSteps {
 			int qty = Integer.parseInt(dataTable.cell(i, 1));
 			int price = Integer.parseInt(dataTable.cell(i, 2));
 			actualRes = actualRes + (qty * price);
-
 		}
 	}
 
